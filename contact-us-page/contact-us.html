@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DMR STUDIOS</title>
+  <style>
+ *{
+     margin:0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins',sans-serif;
+ }
+ .contact{
+     position: relative;
+     min-height: 100vh;
+     padding: 50px 100px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    flex-direction: column;
+     background: url(../img/contact-us.jfif);
+     background-size:cover;
+ }
+ .contact .content{
+     max-width: 800px;
+     text-align: center;
+ }
+ .contact .content h2{
+     font-size: 36px;
+     font-weight: 500;
+     color: #00bcd4;
+     background: rgb(0, 0, 0);
+     border-radius: 7px;
+     box-shadow: 1px 10px 12px rgb(255, 255, 255);
+ } 
+ .container{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 30px;
+ }
+
+ .container .contactinfo{
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+ }
+ .container .contactinfo .box{
+     position: relative;
+     padding: 20px 0;
+     display: flex;
+ }
+ .container .contactinfo .box .icon{
+     min-width: 60px;
+     height: 60px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 22px;
+ }
+ 
+ .container .contactinfo .box .text{
+     display: flex;
+     margin-left: 20px;
+     font-size: 16px;
+     color: #fff;
+     flex-direction: column;
+     font-weight: 300;
+ }
+ .container .contactinfo .box .text h2{
+     font-weight: 500;
+     color: #00bcd4;
+ }
+ .contactform{
+     width: 40%;
+     padding: 40px;
+     background:#fff;
+}
+.contactform h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactform .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span{
+    color: #00bcd4;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactform .inputbox input[type="submit"]{
+    width: 100px;
+    background:#00bcd4;
+    color: #fff;
+    border: none;
+    cursor:pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+@media (max-width: 990px){
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactinfo{
+        margin-bottom: 40px;
+    }
+    .container .contactinfo,.contactform{
+        width:100%;
+    }
+}
+
+
+
+  </style>
+</head>
+<body>
+    <section>
+        <div class="contact">
+            <div class="content">
+                <h2>CONTACT-US</h2>
+            </div>
+          <div class="container">
+              <div class="contactinfo">
+                  <div class="box">
+                      <div class="icon"><img src="../img/address.png"/></div>
+                      <div class="text">
+                      <h2>ADDRESS</h2>
+                      <p><strong>#75&76 BHARATH NAGAR <br>THANISANDRA,BANGLORE<br>560077</strong></p>
+                  </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><img src="../img/phone.png"/></div>
+                    <div class="text">
+                    <h2>PHONE</h2>
+                    <p><strong>8867637162</strong></p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="icon"><img src="../img/e-mail.png"/></div>
+                <div class="text">
+                <h2>E-MAIL</h2>
+                <p><strong>dmrds@dmrdesginstudio.com</strong></p>
+            </div>
+          </div>
+              </div>
+          
+          <div class="contactform">
+              <form  action="mailto:zayeemn@gmail.com" method="post" enctype="text/plain">
+                  <h2>SEND MESSAGE</h2>
+              
+              <div class="inputbox">
+                  <input type="text" name="" required="required">
+                  <span>FULL NAME</span>
+              </div>
+              <div class="inputbox">
+                <input type="text" name="" required="required">
+                <span>YOUR E-MAIL ID</span>
+            </div>
+            <div class="inputbox">
+              <textarea required="required"></textarea>
+                <span>Type Your Message....</span>
+            </div>
+            <div class="inputbox">
+                <input type="submit" name="" value="SEND">
+               
+            </div>
+              
+          </div>
+          </form>
+</div>
+
+        </div>
+    </section>
+</body>
+</html>
